@@ -5,7 +5,7 @@
 /**
  *main - Entry point
  *
- *Purpose: print zero, positive or negative
+ *Purpose: print zero, positive or negative.
  *
  *Return: Always 0 (Success)
  */
