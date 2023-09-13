@@ -1,4 +1,4 @@
-#inlcude "../main.h"
+#inlcude "main.h"
 
 /**
  *print_alphabet - print the alphabet a - z
