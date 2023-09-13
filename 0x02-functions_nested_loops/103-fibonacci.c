@@ -1,35 +1,24 @@
-
-#include"main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints the sum of even fibonacci numbers less than 4000000.
  *
- * Description: Prints the sum of even-valued
- *              Fibonacci sequence not exceed
- *              4million
- *
- * Return: Always 0 (Success)
-*/
+ * Return: Nothing
+ */
 
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	float total_sum;
+	int x = 0;
+	long y = 1, z = 2, sum = z;
 
-	while (1)
+	while (z + y < 4000000)
 	{
-		sum = fib1 + fib2;
-
-		if (sum > 4000000)
-			break;
-
-		if ((sum % 2) == 0)
-			total_sum += sum;
-
-			fib1 = fib2;
-			fib2 = sum;
+		z += y;
+		if (z % 2 == 0)
+		sum += z;
+		y = z - y;
+		++x;
 	}
-	printf("%.0f\n", total_sum);
-
+	printf("%ld\n", sum);
 	return (0);
 }
