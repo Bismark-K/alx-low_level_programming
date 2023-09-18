@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset-to_98 - updates the value after taking the pointer
+ * reset_to_98 - updates the value after taking the pointer
  *
  * @n: expected int to be checked
  *
