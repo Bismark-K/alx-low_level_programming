@@ -14,19 +14,21 @@
 
 int main(void)
 {
-	char a;
-	int i;
+	int a, b;
+	time_t ti;
 
-	srand(time(0));
-
-	while (i <= 2645)
+	srand((unsigned int) time(&ti));
+	while (b < 2772)
 	{
 		a = rand() % 128;
-		i += a;
-		putchar(a);
+		if ((b + a) > 2772)
+		{
+			break;
+		}
+		b = b + a;
+		printf("%c", a);
 	}
-	putchar(2772 - i);
-	putchar('\n');
+	printf("%c\n", (2772 - b));
 
 	return (0);
 }
