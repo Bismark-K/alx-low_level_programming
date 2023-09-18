@@ -14,21 +14,26 @@
 
 int main(void)
 {
-	int a, b;
-	time_t ti;
+	int psswd[100];
+	int j, ad, x;
 
-	srand((unsigned int) time(&ti));
-	while (b < 2772)
+	ad = 0;	
+
+	srand(time(NULL));
+
+	for (j = 0; j < 100; j++)
 	{
-		a = rand() % 128;
-		if ((b + a) > 2772)
+		psswd[j] = rand() % 78;
+		ad += (psswd[j] + '0');
+		putchar(psswd[j] + '0');
+		if ((2772 - ad) - '0' < 78)
 		{
+			x = 2772 - ad - '0';
+			ad += x;
+			putchar(x + '0');
 			break;
 		}
-		b = b + a;
-		printf("%c", a);
 	}
-	printf("%c\n", (2772 - b));
 
 	return (0);
 }
