@@ -13,9 +13,7 @@
 char *cap_string(char *st)
 {
 	int i = 0;
-	char s_1;
 
-	s_1 =  st[i] - 1;
 	while (st[i])
 	{
 		while (!(st[i] <= 'z' && st[i] >= 'a'))
