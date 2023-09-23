@@ -11,17 +11,17 @@
 
 char *rot13(char *st)
 {
-	int ix, ixx;
+	int x, y;
 	char alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char enc[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijlm";
 
-	for (ix = 0; st[ix] != '\0'; ix++)
+	for (x = 0; st[x] != '\0'; x++)
 	{
-		for (ixx = 0; ixx < 52; ixx++)
+		for (y = 0; y < 52; y++)
 		{
-			if (st[ix] == alp[ixx])
+			if (st[x] == alp[y])
 			{
-				st[ix] = enc[ixx];
+				st[x] = enc[y];
 				break;
 			}
 		}
