@@ -6,7 +6,7 @@
  * @c: target character
  *
  * Return: NULL, if the character is not found or a pointer to the
- * 	first occurence of c in s
+ *	first occurence of c in s
  *
  * Author: dz1dzor
  */
