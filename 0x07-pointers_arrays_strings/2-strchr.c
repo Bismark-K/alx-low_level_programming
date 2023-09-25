@@ -22,6 +22,6 @@ char *_strchr(char *s, char c)
 	if (c == *s)
 		return (s);
 	/* When character isn't located, return null */
-	return (000);
+	return ('\0');
 }
 
