@@ -8,7 +8,7 @@
  *      errno is appropriated
  */
 
-int _putchar.c(char ch)
+int _putchar(char ch)
 {
 	return (write(1, &ch, 1));
 }
