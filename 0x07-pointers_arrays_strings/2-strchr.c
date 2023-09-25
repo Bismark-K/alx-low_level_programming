@@ -15,11 +15,11 @@ char *_strchr(char *s, char c)
 {
 	while (*s != '\0')
 	{
-		if (c == *s)
+		if (*s == c)
 			return (s);
 		s++;
 	}
-	if (c == *s)
+	if (*s == c)
 		return (s);
 	/* When character isn't located, return null */
 	return ('\0');
