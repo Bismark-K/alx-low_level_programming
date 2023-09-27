@@ -13,7 +13,7 @@ int ini_prime(int n, int iter);
 
 int is_prime_number(int n)
 {
-	if (n <= 1)
+	if (n == 1 || n <= 0)
 		return (0);
 
 	return (ini_prime(n, n - 1));
@@ -31,14 +31,13 @@ int is_prime_number(int n)
 
 int ini_prime(int n, int iter)
 {
-	if (n % iter == 0 && iter > 0)
+	if (n % iter == 0)
 	{
+		if (iter == 1)
+		{
+			return (1);
+		}
 		return (0);
 	}
-	if (iter == 1)
-	{
-		return (1);
-	}
-	return (ini_prime(n, iter - 1));
 }
 
