@@ -1,9 +1,7 @@
 #include "main.h"
 
-int ini_prime(int n, int iter);
-
 /**
- * is_prime_number - checks to see a number falls under prime numbers or not
+ * is _prime_number - checks to see a number falls under prime numbers or not
  * @n: number to check
  *
  * Return: 0 if n is not a prime number and 1 if n is a prime number
@@ -11,9 +9,11 @@ int ini_prime(int n, int iter);
  * Author: dz1dzor
  */
 
+int ini_prime(int n, int iter);
+
 int is_prime_number(int n)
 {
-	if (n == 1 || n <= 0)
+	if (n <= 1)
 		return (0);
 
 	return (ini_prime(n, n - 1));
@@ -31,13 +31,14 @@ int is_prime_number(int n)
 
 int ini_prime(int n, int iter)
 {
-	if (n % iter == 0)
+	if (i > 0 && n % iter == 0)
 	{
-		if (iter == 1)
-		{
-			return (1);
-		}
 		return (0);
 	}
+	if (iter == 1)
+	{
+		return (1);
+	}
+	return (ini_prime(n, iter - 1));
 }
 
