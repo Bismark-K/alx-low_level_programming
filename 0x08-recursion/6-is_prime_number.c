@@ -1,5 +1,7 @@
 #include "main.h"
 
+int ini_prime(int n, int iter);
+
 /**
  * is _prime_number - checks to see a number falls under prime numbers or not
  * @n: number to check
@@ -8,8 +10,6 @@
  *
  * Author: dz1dzor
  */
-
-int ini_prime(int n, int iter);
 
 int is_prime_number(int n)
 {
