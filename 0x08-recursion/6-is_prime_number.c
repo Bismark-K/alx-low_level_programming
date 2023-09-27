@@ -1,15 +1,15 @@
 #include "main.h"
 
+int ini_prime(int n, int iter);
+
 /**
- * is _prime_number - checks to see a number falls under prime numbers or not
+ * is_prime_number - checks to see a number falls under prime numbers or not
  * @n: number to check
  *
  * Return: 0 if n is not a prime number and 1 if n is a prime number
  *
  * Author: dz1dzor
  */
-
-int ini_prime(int n, int iter);
 
 int is_prime_number(int n)
 {

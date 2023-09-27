@@ -1,15 +1,15 @@
 #include "main.h"
 
+int ini_sqrt_recursion(int n, int iter);
+
 /**
- * _swrt_recursion - returns a number's natural square root
+ * _sqrt_recursion - returns a number's natural square root
  * @n: value to find its square root
  *
  * Return: the final value
  *
  * Author: dz1dzor
  */
-
-int ini_sqrt_recursion(int n, int iter);
 
 int _sqrt_recursion(int n)
 {
