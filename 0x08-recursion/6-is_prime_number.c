@@ -31,7 +31,7 @@ int is_prime_number(int n)
 
 int ini_prime(int n, int iter)
 {
-	if (iter > 0 && n % iter == 0)
+	if (n % iter == 0 && iter > 0)
 	{
 		return (0);
 	}
