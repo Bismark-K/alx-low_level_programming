@@ -16,11 +16,9 @@
 int main(int argc, char *argv[])
 {
 	/*cinum for number of coins*/
-	int cinum, needed, cents;
+	int cinum = 0, needed = 2, cents;
 	char err[5] = "Error";
 
-	cinum = 0;
-	needed = 2;
 	if (argc != needed)
 	{
 		printf("%s\n", err);
