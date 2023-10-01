@@ -1,1 +1,30 @@
-This directory is for projects on pointers, arrays and strings
+| File      | Description |
+| ----------- | ----------- |
+| [0-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/0-main.c) | 0-main.c |
+| [0-memset](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/0-memset) | 0-memset |
+| [0-memset.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/0-memset.c) | 0-memset.c |
+| [1-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/1-main.c) | 1-main.c |
+| [1-memcpy](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/1-memcpy) | 1-memcpy |
+| [1-memcpy.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/1-memcpy.c) | 1-memcpy.c |
+| [2-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/2-main.c) | 2-main.c |
+| [2-strchr](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/2-strchr) | 2-strchr |
+| [2-strchr.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/2-strchr.c) | 2-strchr.c |
+| [3-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/3-main.c) | 3-main.c |
+| [3-strspn](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/3-strspn) | 3-strspn |
+| [3-strspn.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/3-strspn.c) | 3-strspn.c |
+| [4-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/4-main.c) | 4-main.c |
+| [4-strpbrk](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/4-strpbrk) | 4-strpbrk |
+| [4-strpbrk.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/4-strpbrk.c) | 4-strpbrk.c |
+| [5-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/5-main.c) | 5-main.c |
+| [5-strstr.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/5-strstr.c) | 5-strstr.c |
+| [7-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/7-main.c) | 7-main.c |
+| [7-print_chessboard.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/7-print_chessboard.c) | 7-print_chessboard.c |
+| [8-diagsums](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/8-diagsums) | 8-diagsums |
+| [8-main.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/8-main.c) | 8-main.c |
+| [8-print_diagsums.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/8-print_diagsums.c) | 8-print_diagsums.c |
+| [8-print_diagsums1.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/8-print_diagsums1.c) | 8-print_diagsums1.c |
+| [100-set_string.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/100-set_string.c) | 100-set_string.c |
+| [101-crackme_password](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/101-crackme_password) | 101-crackme_password |
+| [_putchar.c](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/_putchar.c) | _putchar.c |
+| [main.h](https://github.com/dz1dzor/remote_store/blob/master/0x07-pointers_arrays_strings/main.h) | main.h |
+
