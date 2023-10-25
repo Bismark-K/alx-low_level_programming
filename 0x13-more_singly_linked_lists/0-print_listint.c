@@ -11,17 +11,14 @@ size_t print_listint(const listint_t *h)
 {
 	size_t nd_cnt;
 
-	nd_cnt = 1;
-	if (h == NULL)
-		return (0);
+	nd_cnt = 0;
 
-	for (; h->next != NULL; nd_cnt++)
+	while (h != NULL)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
+		nd_cnt++;
 	}
-
-	printf("%d\n", h->n);
 
 	return (nd_cnt);
 }
