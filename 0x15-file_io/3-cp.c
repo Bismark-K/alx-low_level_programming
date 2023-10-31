@@ -1,28 +1,19 @@
 #include "main.h"
 
-void exitFile(int d_file);
-void cp_file(char *src, char *dest);
-
 /**
- * main - entry point
- * @argv: list or passed arguments
- * @argc: counts of arguments
- *
- * Return: Always 0 (Success)
- * Author: dz1dzor
+ * exitFile - exits the file
+ * @d_file: file description
 */
-int main(int argc, char *argv[])
+void exitFile(int d_file)
 {
-	int thr = 3;
+	int ext;
 
-	if (argc != thr)
+	ext = close(d_file);
+	if (ext == -1)
 	{
-		dprintf(STDERR_FILENO, "Usage: copy from_fl to_fl\n");
-		exit(97);
+		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", d_file);
+		exit(100);
 	}
-	cp_file(argv[1], argv[2]);
-
-	return (0);
 }
 
 /**
@@ -69,18 +60,25 @@ void cp_file(char *src, char *dest)
 		exitFile(to_fl);
 	}
 }
-/**
- * exitFile - exits the file
- * @d_file: file description
-*/
-void exitFile(int d_file)
-{
-	int ext;
 
-	ext = close(d_file);
-	if (ext == -1)
+	/**
+ * main - entry point
+ * @argv: list or passed arguments
+ * @argc: counts of arguments
+ *
+ * Return: Always 0 (Success)
+ * Author: dz1dzor
+*/
+int main(int argc, char *argv[])
+{
+	int thr = 3;
+
+	if (argc != thr)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", d_file);
-		exit(100);
+		dprintf(STDERR_FILENO, "Usage: copy from_fl to_fl\n");
+		exit(97);
 	}
+	cp_file(argv[1], argv[2]);
+
+	return (0);
 }
