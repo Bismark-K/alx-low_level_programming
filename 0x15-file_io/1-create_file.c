@@ -13,16 +13,19 @@ int create_file(const *filename, char *text_content)
 	int fl, wtstat, wrd;
 
 	wrd = 0;
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
 	fl = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (fl == -1)
 		return (-1);
 
-	if (text_content)
+	if (!text_content)
+		text_content = "";
+
+	if (text_content != NULL)
 	{
-		while (text_content[wrd] != '\0')
+		while (text_content[wrd])
 			wrd++;
 
 		wtstat = write(fl, text_content, wrd);
