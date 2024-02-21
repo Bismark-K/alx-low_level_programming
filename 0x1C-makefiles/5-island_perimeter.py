@@ -2,6 +2,7 @@
 # Author: devbismarkkwaku
 """Calculating the perimeter of an island."""
 
+
 def island_perimeter(grid):
     """Returns the perimeter of the island described in grid.
     Water is represented by 0 and land by 1.
