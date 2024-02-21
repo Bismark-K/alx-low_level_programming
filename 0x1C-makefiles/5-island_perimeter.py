@@ -1,8 +1,15 @@
 #!/usr/bin/python3
 # Author: devbismarkkwaku
+"""Calculating the perimeter of an island."""
 
 def island_perimeter(grid):
-    """returns the perimeter of the island described in grid."""
+    """Returns the perimeter of the island described in grid.
+    Water is represented by 0 and land by 1.
+    Args:
+        grid (list): has the lists of islands' integers.
+    Returns:
+        island's perimeter.
+    """
     the_size = 0
     the_width = len(grid[0])
     the_edges = 0
