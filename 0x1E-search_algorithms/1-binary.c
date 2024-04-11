@@ -10,8 +10,7 @@
  */
 int recursive_srch(int *array, size_t size, int value)
 {
-	size_t i;
-	size_t rem = size / 2;
+	size_t i, rem = size / 2;
 
 	if (size == 0 || array == NULL)
 		return (-1);
@@ -20,11 +19,10 @@ int recursive_srch(int *array, size_t size, int value)
 	printf("Searching in array: ");
 	for (i = 0; i < size; i++)
 	{
-		print("%d", array[i]);
+		printf("%d", array[i]);
 		if (i < size - 1)
-			print(", ");
+			printf(", ");
 	}
-
 	printf("\n");
 
 	/* start search */
@@ -60,7 +58,7 @@ int binary_search(int *array, size_t size, int value)
 	i = recursive_srch(array, size, value);
 
 	/* if the value isn't found */
-	if (array[i] != value)
+	if (array[i] != value && i >= 0)
 		return (-1);
 
 	return (i);
