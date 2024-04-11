@@ -61,11 +61,6 @@ int binary_search(int *array, size_t size, int value)
 	if (array[i] != value)
 		return (-1);
 
-	if (i != -1)
-		printf("Value %d found at index %d\n", value, i);
-	else
-		printf("Value %d not found in the array\n", value);
-
 	return (i);
 }
 
