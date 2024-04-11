@@ -19,7 +19,11 @@ int recursive_srch(int *array, size_t size, int value)
 	/* Print the array been searched now */
 	printf("Searching in array: ");
 	for (i = 0; i < size; i++)
-		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+	{
+		print("%d", array[i]);
+		if (i < size - 1)
+			print(", ");
+	}
 
 	printf("\n");
 
