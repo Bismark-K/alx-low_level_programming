@@ -1,8 +1,6 @@
 #include "search_algos.h"
 
 
-int recursive_srch(int *array, size_t size, int value);
-
 /**
  * binary_search - searches for a value in a sorted array of integers
  * @array: pointer to the first element of the array to search in
