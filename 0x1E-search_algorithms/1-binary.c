@@ -2,34 +2,6 @@
 
 
 /**
- * binary_search - searches for a value in a sorted array of integers
- * @array: pointer to the first element of the array to search in
- * @size: total elements in the array
- * @value: the element to search for
- * Return: the index of the found value, -1 if array is NULL or
- *	value isn't found
- * Author: Bismark-K
- */
-int binary_search(int *array, size_t size, int value)
-{
-	int i;
-
-	/** get the index **/
-	i = recursive_srch(array, size, value);
-
-	/* if the value isn't found */
-	if (array[i] != value)
-		return (-1);
-
-	if (i != -1)
-		printf("Value %d found at index %d\n", value, i);
-	else
-		printf("Value %d not found in the array\n", value);
-
-	return (i);
-}
-
-/**
  * recursive_srch - function to do the searching
  * @array: pointer to the first element of the array to search in
  * @size: the size of the area
@@ -67,3 +39,33 @@ int recursive_srch(int *array, size_t size, int value)
 
 	return (recursive_srch(array + rem, size - rem, value) + rem);
 }
+
+
+/**
+ * binary_search - searches for a value in a sorted array of integers
+ * @array: pointer to the first element of the array to search in
+ * @size: total elements in the array
+ * @value: the element to search for
+ * Return: the index of the found value, -1 if array is NULL or
+ *	value isn't found
+ * Author: Bismark-K
+ */
+int binary_search(int *array, size_t size, int value)
+{
+	int i;
+
+	/** get the index **/
+	i = recursive_srch(array, size, value);
+
+	/* if the value isn't found */
+	if (array[i] != value)
+		return (-1);
+
+	if (i != -1)
+		printf("Value %d found at index %d\n", value, i);
+	else
+		printf("Value %d not found in the array\n", value);
+
+	return (i);
+}
+
